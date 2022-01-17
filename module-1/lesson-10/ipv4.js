@@ -24454,7 +24454,7 @@ const listIPv4 = [
 ];
 
 function getSizeOfUniqueAddresses (arr) {
-  let set = new Set(arr);
+  let set = new Set(arr)
   return set.size;
 }
 
