@@ -26,9 +26,7 @@
 
 
     calculateItemPrice() {
-      return this.items.reduce((sum, item) => {
-        sum + item.price * item.countOfProduct;
-      }, 0);
+      return this.items.reduce((sum, item) => sum + (item.price * item.countOfProduct), 0);
     },
     clear() {
       this.items = [];
